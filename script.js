@@ -74,4 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // Smooth Scroll for "Explore Timeline"
+    const exploreBtn = document.getElementById('explore-btn');
+    const timelineSection = document.getElementById('timeline-section');
+    if (exploreBtn && timelineSection) {
+        exploreBtn.addEventListener('click', () => {
+            timelineSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });
